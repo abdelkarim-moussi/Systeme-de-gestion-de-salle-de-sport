@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Systeme de gesttion de salle de sport</title>
 </head>
 <body>
-    
+    <button id="menu-button" type="button" class="text-gray-100 z-20 bg-gray-600 px-1 rounded absolute top-2 left-3 hover:text-blue-500"><i class="fa-solid fa-bars text-xl"></i></button>
+    <section id="nav-bar" class="active relative px-3 text-white h-[100vh] w-[220px] bg-gray-600">
+        <div class="flex items-center justify-center py-2 border-b-[1px] border-gray-300">
+            <h4 class="text-blue-500 font-extrabold text-[1.2rem] mt-5">GYM<span class="text-white">/PRO</span>
+            </h4>
+        </div>
+        
+        <div class="py-5">
+            <ul class="pl-2 flex flex-col gap-2">
+                <li class="text-[1rem] font-semibold text-gray-200 hover:text-blue-500 active:text-blue-500 flex gap-3 items-center tracking-wider"><i class="fa-solid fa-gauge"></i><a href="">Dashboard</a></li>
+                <li class="text-[1rem] font-semibold text-gray-200 hover:text-blue-500 active:text-blue-500 flex gap-3 items-center tracking-wider"><i class="fa-solid fa-users-gear"></i><a href="">Members List</a></li>
+                <li class="text-[1rem] font-semibold text-gray-200 hover:text-blue-500 active:text-blue-500 flex gap-3 items-center tracking-wider"><i class="fa-solid fa-gears"></i><a href="">Manage Members</a></li>
+                <li class="text-[1rem] font-semibold text-gray-200 hover:text-blue-500 active:text-blue-500 flex gap-3 items-center tracking-wider"><i class="fa-solid fa-list"></i><a href="">Activities List</a></li>
+                <li class="text-[1rem] font-semibold text-gray-200 hover:text-blue-500 active:text-blue-500 flex gap-3 items-center tracking-wider"><i class="fa-solid fa-gears"></i><a href="">Manage Activities</a></li>
+                <li class="text-[1rem] font-semibold text-gray-200 hover:text-blue-500 active:text-blue-500 flex gap-3 items-center tracking-wider"><i class="fa-solid fa-list-check"></i><a href="">Reservations</a></li>
+            </ul>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
