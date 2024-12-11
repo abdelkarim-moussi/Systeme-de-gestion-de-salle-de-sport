@@ -8,3 +8,9 @@ th,td{
     padding-left : 10px;
     text-align: center;
 }
+
+.hero{
+    background : linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.9)),url(../imgs/gym-bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
