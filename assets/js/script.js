@@ -4,6 +4,7 @@ const icon = document.querySelector(".fa-solid")
 const toggledItems = document.querySelectorAll("toggeled-item");
 var errors = document.querySelectorAll(".error-message");
 var inputs = document.querySelectorAll("input");
+const modal = document.querySelector(".modal");
 // function toggleNavbar(){
 //  console.log("toggeled");
 //  navBar.classList.toggle("active");
@@ -28,14 +29,21 @@ toggledItems.forEach(item=>{
 })
 
 
-function hideErrorMesssage(){
-    inputs.forEach(input=>{
-        input.addEventListener("input",()=>{
-            errors.forEach(error => {
-                error.innerText = "";
-            });
-        })
-    })
-}
+// function hideErrorMesssage(){
+//     inputs.forEach(input=>{
+//         input.addEventListener("input",()=>{
+//             errors.forEach(error => {
+//                 error.innerText = "";
+//             });
+//         })
+//     })
+// }
 
-hideErrorMesssage();
+// hideErrorMesssage();
+
+function displayModal(){
+   modal.classList.remove("hidden");
+}
+function hideModal(){
+   modal.classList.add("hidden");
+}
