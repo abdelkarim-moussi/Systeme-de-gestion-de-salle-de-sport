@@ -54,8 +54,21 @@
 <main class="w-full main-section">
 
 <!-- dashboard -->
-    <section class="bg-gray-200 w-full section sec1 dashboard active" id="dashboard">
-        <p>hello</p>
+    <section class="w-full section sec1 dashboard active" id="dashboard">
+        <div class="w-full flex gap-5 justify-center pt-20">
+        <div class="w-[30%] py-2 bg-green-500 rounded-md shadow-md shadow-gray-300 text-white text-center">
+            <h3 class="text-[3rem] font-semibold">Members</h3>
+            <p class="text-[4rem] font-bold"><?php echo $nbmembers ?></p>
+        </div>
+        <div class="w-[30%] py-2 bg-green-500 rounded-md shadow-md shadow-gray-300 text-white text-center">
+            <h3 class="text-[3rem] font-semibold">Activities</h3>
+            <p class="text-[4rem] font-bold"><?php echo $nbactivities ?></p>
+        </div>
+        <div class="w-[30%] py-2 bg-green-500 rounded-md shadow-md shadow-gray-300 text-white text-center">
+            <h3 class="text-[3rem] font-semibold">Reservations</h3>
+            <p class="text-[4rem] font-bold"><?php echo $nbreservations ?></p>
+        </div>
+        </div>
     </section>
 
 <!-- Members section -->
@@ -115,8 +128,6 @@
             <th>date fin</th>
             <th>capacité</th>
             <th>disponibility</th>
-            <th>update</th>
-            <th>delete</th>
             </tr>
          </thead>
          <tbody>
@@ -141,8 +152,6 @@
               <td>
                   <?php echo $activity["disponibilite"]; ?>
               </td>
-              <td><a href="#"><i class="fa-solid fa-edit text-yellow-400"></i></a></td>
-              <td><a href="#"><i class="fa-solid fa-trash text-red-600"></i></a></td>
             </tr>
             <?php } ?>
            
@@ -152,7 +161,7 @@
     </section>
 
 <!-- reservations -->
-    <section class="bg-gray-200 w-full section sec4 reservations" id="reservations">
+    <section class="w-full section sec4 reservations" id="reservations">
         <h1 class="text-center pt-5 pb-2 font-extrabold text-3xl">List of reservations</h1>
         <div class="w-[300px] h-[2px] bg-gray-400 mx-auto mb-10"></div>
     <table class="w-full">
